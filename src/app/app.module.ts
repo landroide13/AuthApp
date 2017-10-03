@@ -6,6 +6,7 @@ import {APP_ROUTING} from './app.routes';
 
 //Services
 import {AuthService} from './services/auth.service';
+import {AuthGuardService} from './services/auth-guard.service';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -26,7 +27,8 @@ import { ProtectedComponent } from './components/protected/protected.component';
     APP_ROUTING
   ],
   providers: [
-    AuthService
+    AuthService,
+    AuthGuardService
   ],
   bootstrap: [AppComponent]
 })
